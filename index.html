@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070d16">
+  <meta name="description" content="Narendiran G V is a techno-functional WMS consultant working across warehouse workflows, software engineering, and SAP/ERP integrations.">
+  <title>Narendiran G V — WMS Consultant Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f4f3ee;
+      --ink: #1c2926;
+      --muted: #69736d;
+      --line: #d9ddd4;
+      --green: #c5ef72;
+      --forest: #173d34;
+      --mint: #dceade;
+      --white: #fffefa;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "DM Sans", sans-serif;
+      --display: Manrope, sans-serif;
+      --mono: "DM Mono", monospace;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    button { color: inherit; font: inherit; }
+    .wrap { width: min(1160px, calc(100% - 64px)); margin: 0 auto; }
+    .topbar { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+    .brand { font-family: var(--display); font-size: 16px; font-weight: 800; letter-spacing: -.06em; }
+    .brand span { color: #7c8b62; }
+    .nav { display: flex; gap: 30px; align-items: center; font-size: 13px; color: #52605a; }
+    .nav a:hover { color: var(--ink); }
+    .nav .contact { border: 1px solid #aeb7aa; padding: 10px 15px; border-radius: 99px; color: var(--ink); }
+    .eyebrow { display: flex; gap: 9px; align-items: center; color: #697960; text-transform: uppercase; letter-spacing: .16em; font: 11px var(--mono); }
+    .eyebrow:before { content: ""; width: 7px; height: 7px; border-radius: 99px; background: #89ad48; }
+    .hero { padding: 82px 0 70px; display: grid; grid-template-columns: 1.17fr .83fr; gap: 65px; align-items: center; }
+    h1 { font: 500 clamp(48px, 6.1vw, 79px)/1.01 var(--display); letter-spacing: -.075em; margin: 22px 0 20px; max-width: 720px; }
+    h1 em { font-family: var(--serif); font-weight: 400; color: #496653; letter-spacing: -.06em; }
+    .hero p { color: #5c6760; font-size: 17px; line-height: 1.72; max-width: 590px; margin: 0; }
+    .hero-actions { display: flex; align-items: center; gap: 22px; margin-top: 30px; }
+    .button { display: inline-flex; align-items: center; gap: 14px; background: var(--forest); color: #fff; border-radius: 999px; padding: 14px 19px; font-size: 13px; font-weight: 600; transition: transform .2s, background .2s; }
+    .button:hover { transform: translateY(-2px); background: #235246; }
+    .button .arrow { font-size: 18px; line-height: 12px; color: var(--green); }
+    .text-link { font-size: 13px; color: #52605a; border-bottom: 1px solid #aab3a8; padding-bottom: 4px; }
+    .diagram { background: #e2e9dc; border-radius: 8px 8px 72px 8px; min-height: 350px; position: relative; overflow: hidden; padding: 26px; }
+    .diagram:before { content:""; position:absolute; width:270px; height:270px; border:1px solid rgba(40,80,62,.14); border-radius:50%; top:54px; left:50%; transform:translateX(-50%); box-shadow:0 0 0 32px rgba(40,80,62,.035), 0 0 0 64px rgba(40,80,62,.025); }
+    .diagram-label { position: relative; z-index: 2; display: flex; justify-content: space-between; color: #607269; text-transform: uppercase; letter-spacing: .12em; font: 10px var(--mono); }
+    .warehouse { position: absolute; width: 77%; height: 212px; left: 11.5%; top: 87px; z-index: 1; }
+    .warehouse .roof { position:absolute; top:0; left:7%; width:86%; height:48px; background:#284c3e; clip-path:polygon(50% 0,100% 100%,0 100%); }
+    .warehouse .building { position:absolute; top:42px; left:10%; width:80%; height:148px; background:#f8f8f1; border:1px solid #aebca9; }
+    .warehouse .beam { position:absolute; left:0; right:0; height:10px; background:#94ab87; top:40px; z-index:2; }
+    .rack { position:absolute; top:57px; height:105px; width:35px; border:2px solid #66836d; z-index:3; }
+    .rack:before,.rack:after { content:""; position:absolute; left:-2px; width:35px; height:3px; background:#66836d; }
+    .rack:before { top:33px; } .rack:after { top:69px; }
+    .r1 { left:19%; } .r2 { left:41%; } .r3 { left:63%; }
+    .box { position:absolute; width:15px; height:14px; background:#d5a764; z-index:4; }
+    .b1 { left:22%; top:71px; } .b2 { left:30%; top:108px; background:#769c7a; } .b3 { left:44%; top:71px; background:#a4b36b; } .b4 { left:67%; top:108px; }
+    .flow { position:absolute; z-index:4; height:2px; left:16%; right:16%; bottom:5px; background:#8dac7e; }
+    .flow:before,.flow:after { content:""; position:absolute; top:-4px; width:9px; height:9px; border-radius:50%; background:#668c54; }
+    .flow:before { left:0; } .flow:after { right:0; background:#c39751; }
+    .scan { position:absolute; z-index:5; right:14%; top:70px; width:35px; height:50px; border:2px solid #274c3e; border-radius:5px; background:#c5ef72; transform:rotate(10deg); }
+    .scan:after { content:""; position:absolute; left:7px; right:7px; top:13px; height:2px; background:#274c3e; box-shadow:0 7px #274c3e,0 14px #274c3e; }
+    .signal { position:absolute; right:8%; top:77px; z-index:4; color:#536d53; font:10px var(--mono); }
+    .diagram-foot { position:absolute; left:26px; right:26px; bottom:23px; display:flex; align-items:center; justify-content:space-between; color:#617267; font:10px var(--mono); z-index:4; }
+    .diagram-foot b { color:#395c47; font-weight:500; }
+    .statline { border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; padding:20px 0; align-items:center; gap:35px; color:#69736d; font-size:12px; }
+    .statline strong { color:#293a32; font-family:var(--display); font-size:14px; letter-spacing:-.03em; }
+    .statline .separator { height:23px; width:1px; background:var(--line); }
+    .section-head { display:flex; justify-content:space-between; align-items:end; margin:78px 0 25px; }
+    .section-head h2 { font:500 39px/1.05 var(--display); letter-spacing:-.06em; margin:13px 0 0; }
+    .section-head p { max-width:330px; color:#737c74; line-height:1.55; font-size:13px; margin:0 0 2px; }
+    .filters { display:flex; gap:8px; margin-bottom:23px; flex-wrap:wrap; }
+    .filter { border:1px solid #cfd5cb; background:transparent; border-radius:99px; padding:8px 13px; color:#68746b; font-size:11px; cursor:pointer; transition:all .2s; }
+    .filter:hover,.filter.active { background:#284b3e; color:white; border-color:#284b3e; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { background:var(--white); border:1px solid #e2e5dd; border-radius:5px; padding:24px 23px 21px; min-height:285px; display:flex; flex-direction:column; transition:transform .22s, box-shadow .22s; }
+    .card:hover { transform:translateY(-4px); box-shadow:0 14px 32px rgba(36,56,44,.08); }
+    .card-top { display:flex; justify-content:space-between; align-items:center; color:#74816e; font:10px var(--mono); }
+    .tag { padding:6px 8px; background:#edf3e8; color:#53704d; border-radius:2px; text-transform:uppercase; letter-spacing:.06em; }
+    .card h3 { font:600 23px/1.15 var(--display); letter-spacing:-.055em; margin:29px 0 12px; }
+    .card p { font-size:13px; line-height:1.65; color:#707a72; margin:0; }
+    .card-bottom { margin-top:auto; padding-top:23px; display:flex; justify-content:space-between; align-items:center; font:10px var(--mono); color:#859087; }
+    .read { color:#375947; font:600 12px var(--sans); }
+    .read span { color:#91ab5a; margin-left:5px; }
+    .about { background:var(--forest); color:#f4f4e9; margin-top:96px; padding:67px 0; position:relative; overflow:hidden; }
+    .about:after { content:""; width:430px; height:430px; border:1px solid rgba(211,238,183,.12); border-radius:50%; position:absolute; right:-75px; top:-160px; box-shadow:0 0 0 42px rgba(211,238,183,.035),0 0 0 84px rgba(211,238,183,.025); }
+    .about-inner { position:relative; z-index:1; display:grid; grid-template-columns:.8fr 1.2fr; gap:88px; align-items:start; }
+    .about .eyebrow { color:#bed783; }
+    .about h2 { font:500 43px/1.08 var(--display); letter-spacing:-.06em; margin:18px 0 0; max-width:330px; }
+    .about h2 em { font:italic 400 43px var(--serif); color:var(--green); }
+    .about-copy { color:#d0dbd0; font-size:14px; line-height:1.8; max-width:590px; }
+    .about-copy p { margin:0 0 15px; }
+    .about-copy strong { color:white; font-weight:600; }
+    .about-meta { display:flex; gap:8px; flex-wrap:wrap; margin-top:23px; }
+    .about-meta span { border:1px solid rgba(231,239,226,.24); padding:8px 10px; border-radius:99px; font:10px var(--mono); color:#dce7db; }
+    .proof-section { padding-bottom: 84px; }
+    .skill-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .skill-card { background:var(--white); border:1px solid #e2e5dd; border-radius:5px; padding:23px; min-height:230px; }
+    .skill-index,.site-country { color:#7d897b; font:10px var(--mono); letter-spacing:.08em; }
+    .skill-card h3,.site-card h3 { font:600 21px/1.15 var(--display); letter-spacing:-.05em; margin:23px 0 9px; }
+    .skill-card p,.site-card p { color:#707a72; font-size:12px; line-height:1.6; margin:0; }
+    .pills { display:flex; flex-wrap:wrap; gap:6px; margin-top:17px; }
+    .pills span { background:#edf2e9; color:#50624e; padding:6px 8px; border-radius:2px; font-size:10px; }
+    .site-section { background:#e8ebe3; padding:10px 0 72px; }
+    .site-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+    .site-card { background:#f8f8f2; padding:20px 18px; min-height:145px; position:relative; overflow:hidden; border:1px solid #dde2d8; }
+    .site-card h3 { margin:26px 0 6px; }
+    .site-card.featured { background:#234b3e; color:white; border-color:#234b3e; }
+    .site-card.featured .site-country,.site-card.featured p { color:#d4e2cf; }
+    .site-mark { position:absolute; right:12px; bottom:-8px; color:rgba(190,220,160,.13); font:800 47px var(--display); letter-spacing:-.08em; }
+    .contact-row { padding:34px 0; }
+    .contact-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .contact-links a { border:1px solid #cbd2c7; border-radius:99px; padding:10px 14px; font-size:12px; color:#375947; transition:background .2s; }
+    .contact-links a:hover { background:#e9eee5; }
+    .contact-row { display:flex; align-items:center; justify-content:space-between; padding:29px 0; border-bottom:1px solid var(--line); }
+    .contact-row h2 { font:500 29px var(--display); letter-spacing:-.05em; margin:0; }
+    .contact-row p { color:#747d75; font-size:13px; margin:6px 0 0; }
+    footer { display:flex; justify-content:space-between; padding:22px 0 35px; color:#8a9389; font:10px var(--mono); }
+    .modal { position:fixed; inset:0; z-index:20; background:rgba(17,31,26,.56); display:none; align-items:center; justify-content:center; padding:24px; }
+    .modal.open { display:flex; }
+    .modal-panel { width:min(690px,100%); max-height:min(82vh,760px); overflow:auto; background:var(--paper); padding:clamp(25px,6vw,54px); border-radius:8px; position:relative; box-shadow:0 25px 80px rgba(0,0,0,.22); }
+    .close { position:absolute; top:18px; right:18px; border:1px solid var(--line); width:34px; height:34px; border-radius:50%; background:transparent; cursor:pointer; font-size:20px; }
+    .modal-panel h2 { font:600 clamp(30px,5vw,45px)/1.08 var(--display); letter-spacing:-.06em; margin:22px 36px 13px 0; }
+    .modal-panel .dek { color:#69736d; font-size:15px; line-height:1.7; }
+    .modal-panel .body { font:16px/1.82 var(--serif); color:#334039; }
+    .modal-panel .body p { margin:21px 0; }
+    .modal-panel .body h3 { font:600 20px var(--display); letter-spacing:-.04em; }
+    @media(max-width:850px) {
+      .hero { grid-template-columns:1fr; gap:35px; padding:65px 0 54px; }
+      .diagram { min-height:320px; }
+      .grid { grid-template-columns:repeat(2,1fr); }
+      .skill-grid { grid-template-columns:1fr 1fr; }
+      .site-grid { grid-template-columns:repeat(3,1fr); }
+      .about-inner { gap:38px; }
+    }
+    @media(max-width:600px) {
+      .wrap { width:calc(100% - 36px); }
+      .topbar { height:65px; }
+      .nav { gap:14px; font-size:12px; }
+      .nav a:not(.contact) { display:none; }
+      .hero { padding:51px 0 44px; gap:30px; }
+      h1 { font-size:51px; }
+      .hero p { font-size:15px; }
+      .diagram { min-height:280px; }
+      .warehouse { transform:scale(.84); transform-origin:top center; width:94%; left:3%; top:73px; }
+      .diagram:before { top:45px; }
+      .statline { gap:13px; justify-content:space-between; font-size:10px; }
+      .statline strong { font-size:12px; }
+      .section-head { display:block; margin:59px 0 22px; }
+      .section-head h2 { font-size:34px; }
+      .section-head p { margin-top:12px; }
+      .grid { grid-template-columns:1fr; }
+      .skill-grid { grid-template-columns:1fr; }
+      .site-grid { grid-template-columns:1fr 1fr; }
+      .site-card { min-height:130px; }
+      .proof-section { padding-bottom:58px; }
+      .contact-links { gap:7px; }
+      .contact-links a { font-size:11px; padding:9px 10px; }
+      .card { min-height:245px; }
+      .about { margin-top:65px; padding:51px 0; }
+      .about-inner { grid-template-columns:1fr; gap:23px; }
+      .about h2 { font-size:38px; }
+      .about h2 em { font-size:38px; }
+      .contact-row { align-items:flex-start; gap:16px; flex-direction:column; }
+      footer { gap:15px; flex-direction:column; }
+    }
+    @media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*:before,*:after{transition:none!important} }
+
+    :root { --paper:#070d16; --ink:#e8f0f8; --muted:#91a3b6; --line:#203044; --green:#69f0c2; --forest:#0d1a29; --mint:#112437; --white:#0c1725; }
+    body { background:radial-gradient(ellipse at 75% 8%,rgba(16,76,91,.23),transparent 35%),var(--paper); color:var(--ink); }
+    .topbar { border-color:var(--line); }
+    .brand span,.button .arrow { color:var(--green); }
+    .nav { color:#a5b6c8; } .nav a:hover { color:#fff; }
+    .nav .contact { border-color:#355068; color:#dce8f2; border-radius:5px; }
+    .eyebrow { color:#75ccb0; } .eyebrow:before { background:var(--green); box-shadow:0 0 12px rgba(105,240,194,.65); }
+    h1 em { font-family:var(--display); font-weight:700; font-style:normal; color:var(--green); letter-spacing:-.075em; text-shadow:0 0 34px rgba(105,240,194,.14); }
+    .hero p,.about-copy { color:#a8b7c6; }
+    .button { background:var(--green); color:#071712; border-radius:5px; font-weight:700; }
+    .button:hover { background:#8ff7d2; } .button .arrow { color:#10251f; }
+    .text-link { color:#b1c1d0; border-color:#496075; }
+    .diagram { background:radial-gradient(circle at 50% 40%,rgba(33,108,121,.22),transparent 54%),linear-gradient(145deg,#0d1b2b,#0a1421); border:1px solid #233b50; border-radius:6px; box-shadow:inset 0 0 45px rgba(27,103,116,.09),0 22px 60px rgba(0,0,0,.2); }
+    .diagram:before { border-color:rgba(93,218,192,.18); box-shadow:0 0 0 32px rgba(93,218,192,.035),0 0 0 64px rgba(93,218,192,.025); }
+    .diagram-label,.diagram-foot { color:#8ea8b7; } .diagram-foot b { color:#7ff0cf; }
+    .warehouse .roof { background:#267265; } .warehouse .building { background:#102338; border-color:#386477; }
+    .warehouse .beam { background:#2d7f77; } .rack { border-color:#5dc6b3; } .rack:before,.rack:after { background:#5dc6b3; }
+    .box { background:#72a9ff; } .b2 { background:#69f0c2; } .b3 { background:#b2c9ff; } .b4 { background:#e8b85d; }
+    .flow { background:#69f0c2; box-shadow:0 0 12px rgba(105,240,194,.35); }
+    .flow:before { background:#69f0c2; box-shadow:0 0 10px rgba(105,240,194,.65); } .flow:after { background:#e8b85d; }
+    .scan { border-color:#69f0c2; background:#172f3b; box-shadow:0 0 14px rgba(105,240,194,.12); } .scan:after { background:#69f0c2; box-shadow:0 7px #69f0c2,0 14px #69f0c2; }
+    .signal { color:#91ead3; }
+    .live-dot { display:inline-block; width:6px; height:6px; margin-left:5px; border-radius:50%; vertical-align:1px; background:var(--green); box-shadow:0 0 9px var(--green); }
+    .statline { border-color:var(--line); color:#9aabba; } .statline strong { color:#edf4fb; }
+    .section-head h2 { color:#edf4fa; } .section-head p { color:#94a6b7; }
+    .filter { border-color:#2a4054; color:#9fb1c2; border-radius:4px; }
+    .filter:hover,.filter.active { background:#163d3b; border-color:#2a8877; color:#a5f6dd; }
+    .card,.skill-card { background:linear-gradient(155deg,#0e1c2c,#0b1623); border-color:#203348; border-radius:5px; }
+    .card:hover { box-shadow:0 16px 38px rgba(0,0,0,.3); border-color:#36546b; }
+    .card-top,.card-bottom { color:#8297a9; }
+    .tag { background:#102f32; color:#7de6c9; border:1px solid #1d4a49; }
+    .card h3,.skill-card h3,.site-card h3 { color:#e9f2fa; }
+    .card p,.skill-card p,.site-card p { color:#9aabba; }
+    .read { color:#7fe9cb; } .read span { color:#72a9ff; }
+    .about { background:linear-gradient(125deg,#0d1e2e,#102c37 70%,#103a3d); border-top:1px solid #234354; border-bottom:1px solid #234354; }
+    .about:after { border-color:rgba(105,240,194,.13); box-shadow:0 0 0 42px rgba(105,240,194,.025),0 0 0 84px rgba(105,240,194,.018); }
+    .about .eyebrow { color:#83e2c6; } .about h2 em { color:var(--green); }
+    .about-copy strong { color:#f4fbff; } .about-meta span { border-color:#35566a; color:#b1c8d2; border-radius:4px; }
+    .skill-index,.site-country { color:#7da5ba; }
+    .pills span { background:#112b37; color:#a6d8d1; border:1px solid #1d3c49; border-radius:3px; }
+    .site-section { background:#091320; border-top:1px solid #1a2b3b; border-bottom:1px solid #1a2b3b; }
+    .site-card { background:#0d1a28; border-color:#203448; border-radius:4px; }
+    .site-card.featured { background:linear-gradient(145deg,#104238,#102630); border-color:#286c61; }
+    .site-card.featured .site-country,.site-card.featured p { color:#a5ded0; }
+    .site-mark { color:rgba(105,240,194,.1); }
+    .contact-row { border-color:var(--line); } .contact-row h2 { color:#eff6fc; } .contact-row p { color:#9aabba; }
+    .contact-links a { border-color:#2a4054; color:#9cebd5; border-radius:4px; } .contact-links a:hover { background:#102b32; }
+    footer { color:#74889c; }
+    .modal { background:rgba(1,7,13,.8); backdrop-filter:blur(8px); }
+    .modal-panel { background:#0d1927; border:1px solid #2a4054; border-radius:5px; color:var(--ink); }
+    .modal-panel .dek { color:#a1b2c2; } .modal-panel .body { color:#ced9e4; }
+    .modal-panel .body h3 { color:#83ebcc; } .close { border-color:#365066; color:#d8e7f1; }
+    @media(max-width:600px) { .statline { flex-wrap:wrap; } .statline .separator { display:none; } }
+
+    .award-panel { margin-top:36px; margin-bottom:6px; padding:20px 23px; display:grid; grid-template-columns:54px 1fr auto; gap:17px; align-items:center; border:1px solid #5a5130; background:linear-gradient(100deg,rgba(82,69,29,.3),rgba(14,25,38,.82) 48%); border-radius:5px; position:relative; overflow:hidden; }
+    .award-panel:after { content:""; position:absolute; right:18%; top:-75px; width:150px; height:150px; border:1px solid rgba(243,203,103,.12); border-radius:50%; box-shadow:0 0 0 20px rgba(243,203,103,.025),0 0 0 40px rgba(243,203,103,.02); pointer-events:none; }
+    .award-symbol { width:48px; height:48px; border-radius:50%; display:grid; place-items:center; color:#ffd773; font-size:27px; background:rgba(238,191,79,.12); border:1px solid rgba(238,191,79,.35); text-shadow:0 0 15px rgba(255,215,115,.5); }
+    .award-copy .eyebrow { color:#dfc16e; font-size:9px; } .award-copy .eyebrow:before { background:#f2ca65; box-shadow:0 0 10px rgba(242,202,101,.6); }
+    .award-copy h2 { color:#f5eddb; font:700 21px var(--display); letter-spacing:-.04em; margin:5px 0 3px; }
+    .award-copy p { color:#b5b3a9; font-size:12px; margin:0; line-height:1.5; }
+    .award-link { color:#f3d678; font-size:12px; font-weight:600; position:relative; z-index:1; white-space:nowrap; }
+    .award-link span { color:#88e9ce; margin-left:5px; }
+    .foundation-section { padding-bottom:78px; }
+    .foundation-grid { display:grid; grid-template-columns:.76fr 1.24fr; gap:14px; }
+    .foundation-card { border:1px solid #203348; border-radius:5px; background:linear-gradient(155deg,#0e1c2c,#0b1623); padding:23px; }
+    .foundation-card h3 { color:#e9f2fa; font:600 19px var(--display); letter-spacing:-.04em; margin:19px 0 7px; }
+    .foundation-card p { color:#9aabba; font-size:12px; line-height:1.6; margin:0; }
+    .education-card { position:relative; min-height:220px; background:radial-gradient(circle at 90% 100%,rgba(42,114,103,.16),transparent 40%),linear-gradient(155deg,#0e1c2c,#0b1623); }
+    .score { display:flex; gap:9px; align-items:baseline; margin-top:34px; color:#8fa6b9; font:10px var(--mono); text-transform:uppercase; }
+    .score strong { color:#72edca; font:700 30px var(--display); letter-spacing:-.07em; }
+    .build { display:grid; grid-template-columns:30px 1fr; gap:11px; padding:16px 0; border-top:1px solid #1c2d3e; }
+    .build:first-of-type { margin-top:11px; }
+    .build-no { color:#71cdb4; font:11px var(--mono); padding-top:3px; }
+    .build h3 { font-size:15px; margin:0 0 4px; }
+    .build p { font-size:11px; }
+    .learning-line { display:grid; grid-template-columns:200px 1fr; gap:20px; align-items:start; border-top:1px solid #1c2d3e; padding-top:18px; margin-top:14px; }
+    @media(max-width:850px) { .foundation-grid { grid-template-columns:1fr; } .education-card { min-height:180px; } }
+    @media(max-width:600px) { .award-panel { grid-template-columns:42px 1fr; padding:16px; gap:13px; } .award-symbol { width:40px; height:40px; font-size:23px; } .award-link { grid-column:2; margin-top:-4px; } .award-copy h2 { font-size:19px; } .learning-line { grid-template-columns:1fr; gap:10px; } .foundation-section { padding-bottom:55px; } }
+
+    .resume-experience { padding-bottom:24px; }
+    .role-card { padding:27px; border:1px solid #233a4f; border-radius:5px; background:linear-gradient(145deg,#0e1c2c,#0b1623); }
+    .role-heading { display:flex; justify-content:space-between; align-items:start; gap:24px; }
+    .role-kicker { color:#7edec4; font:10px var(--mono); letter-spacing:.1em; }
+    .role-heading h3 { color:#eef5fb; font:700 27px var(--display); letter-spacing:-.05em; margin:9px 0 5px; }
+    .company { color:#a7b8c8; font-size:14px; margin:0; }
+    .company span { color:#70eac6; padding:0 5px; }
+    .tenure { color:#76e5c6; text-align:right; font:11px var(--mono); line-height:1.7; letter-spacing:.04em; }
+    .tenure small { color:#7f94a8; font-size:9px; }
+    .role-divider { height:1px; background:#203348; margin:22px 0 17px; }
+    .role-points { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:13px 25px; }
+    .role-points li { color:#aebdca; font-size:12px; line-height:1.65; padding-left:19px; position:relative; }
+    .role-points li:before { content:"↳"; position:absolute; left:0; top:0; color:#6ce6c2; font:14px var(--mono); }
+    .education-section { padding-bottom:70px; }
+    .education-entry { display:grid; grid-template-columns:190px 1fr; gap:20px; align-items:center; padding:24px; border:1px solid #203348; border-radius:5px; background:linear-gradient(145deg,#0e1c2c,#0b1623); }
+    .education-years { color:#75d9bd; font:11px var(--mono); }
+    .education-entry h3 { color:#ecf3f9; font:600 20px var(--display); letter-spacing:-.04em; margin:0 0 6px; }
+    .education-entry p { color:#9aabba; font-size:12px; margin:0; }
+    @media(max-width:600px) { .role-card { padding:19px; } .role-heading { flex-direction:column; } .tenure { text-align:left; } .role-points { grid-template-columns:1fr; } .education-entry { grid-template-columns:1fr; gap:11px; padding:19px; } }
+
+    .button.secondary { background:transparent; border:1px solid #377467; color:#a8f1dd; }
+    .button.secondary:hover { background:#102b32; } .button.secondary .arrow { color:#7fe9cb; }
+    .contact-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+    @media(max-width:600px) { .hero-actions { gap:10px; flex-wrap:wrap; } .hero-actions .button { padding:13px 15px; } .contact-actions { width:100%; } .contact-actions .button { justify-content:center; flex:1 1 145px; } }
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#" aria-label="Narendiran home">NAREN<span>.</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a class="contact" href="#contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">TECHNO-FUNCTIONAL WMS · BENGALURU, INDIA</div>
+        <h1>WMS consulting.<br>Software that <em>moves work.</em></h1>
+        <p>I turn warehouse requirements into working WMS solutions—mapping operational workflows, building applications, and connecting SAP/ERP platforms. My work spans discovery, solution design, development, testing, and client site delivery.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/918124727058?text=Hi%20Narendiran%2C%20I%20viewed%20your%20resume." target="_blank" rel="noopener noreferrer" aria-label="Message Narendiran on WhatsApp">WhatsApp <span class="arrow">↗</span></a>
+          <a class="button secondary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gvnarendiran%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Narendiran in Gmail">Gmail <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="diagram" role="img" aria-label="Illustration of a warehouse, storage racks, inventory boxes and a scan device">
+        <div class="diagram-label"><span>WAREHOUSE SYSTEM MAP</span><span>SYS / 001</span></div>
+        <div class="warehouse">
+          <div class="roof"></div><div class="building"></div><div class="beam"></div>
+          <div class="rack r1"></div><div class="rack r2"></div><div class="rack r3"></div>
+          <div class="box b1"></div><div class="box b2"></div><div class="box b3"></div><div class="box b4"></div>
+          <div class="scan"></div><div class="signal">SCAN<br>→</div><div class="flow"></div>
+        </div>
+        <div class="diagram-foot"><span><b>INBOUND</b> → INVENTORY → OUTBOUND</span><span>LIVE FLOW <i class="live-dot"></i></span></div>
+      </div>
+    </section>
+
+    <div class="wrap statline" aria-label="Resume highlights">
+      <span><strong>3+ years</strong> WMS &amp; supply chain technology</span><span class="separator"></span>
+      <span><strong>Full lifecycle</strong> requirements → implementation</span><span class="separator"></span>
+      <span><strong>Client exposure</strong> India &amp; UK</span>
+    </div>
+
+    <section class="wrap award-panel" aria-labelledby="award-title">
+      <div class="award-symbol" aria-hidden="true">✦</div>
+      <div class="award-copy"><div class="eyebrow">RECOGNITION / FINBOX</div><h2 id="award-title">Rising Star Award</h2><p>A career milestone I’m proud to share—recognized for my contribution and growth at FinBox.</p></div>
+      <a class="award-link" href="https://www.linkedin.com/in/gv-narendiran-0a914b190/recent-activity/all/" target="_blank" rel="noopener noreferrer">See the award post <span>↗</span></a>
+    </section>
+
+    <section class="about" id="profile">
+      <div class="wrap about-inner">
+        <div><div class="eyebrow">PROFILE SUMMARY / 01</div><h2>Software should fit <em>the operation.</em></h2></div>
+        <div class="about-copy">
+          <p>I’m <strong>Narendiran G V</strong>, an IT Consultant at Miebach Consulting in Bengaluru, with 3+ years of experience in warehouse management systems and supply chain technology. I work with client teams to understand operational needs and shape them into workable WMS solutions.</p>
+          <p>My work spans process and requirement analysis, solution design, application development, implementation, testing, and SAP/ERP integrations using APIs and file-based interfaces. I studied Electronics and Communication Engineering at SRM University, and enjoy connecting functional detail with practical technical choices.</p>
+          <div class="about-meta"><span>WMS CONSULTING</span><span>SUPPLY CHAIN SYSTEMS</span><span>SAP / ERP INTEGRATION</span><span>TECHNO-FUNCTIONAL DELIVERY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap resume-experience" id="experience" aria-labelledby="experience-title">
+      <div class="section-head"><div><div class="eyebrow">PROFESSIONAL EXPERIENCE / 02</div><h2 id="experience-title">Where I make an impact</h2></div><p>Consulting, warehouse process understanding, and hands-on software delivery.</p></div>
+      <article class="role-card">
+        <div class="role-heading"><div><span class="role-kicker">CURRENT ROLE</span><h3>IT Consultant</h3><p class="company">Miebach Consulting <span>·</span> Bengaluru, India</p></div><div class="tenure">3+ YEARS<br><small>WMS &amp; SUPPLY CHAIN</small></div></div>
+        <div class="role-divider"></div>
+        <ul class="role-points">
+          <li>Work with client teams to understand warehouse operations, gather requirements, and shape them into WMS workflows and solution designs.</li>
+          <li>Build and support operational applications and services using React.js, Node.js, Express.js, and PostgreSQL, with experience across C# and MS SQL Server.</li>
+          <li>Integrate WMS processes with SAP and other ERP platforms using REST APIs and FTP/SFTP interfaces.</li>
+          <li>Contribute across development, testing, implementation, and production support; use Postman for API validation and work with Windows Server and PM2 environments.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="wrap proof-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-head"><div><div class="eyebrow">TECHNICAL &amp; FUNCTIONAL SKILLS / 03</div><h2 id="skills-title">Built for the WMS lifecycle</h2></div><p>Functional depth paired with hands-on engineering—useful across consulting, product, implementation, and support teams.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><span class="skill-index">01 / FUNCTIONAL</span><h3>Warehouse process &amp; WMS</h3><p>Turn operational needs into clear process flows, system rules, and practical user workflows.</p><div class="pills"><span>Requirements analysis</span><span>Inbound &amp; receiving</span><span>Putaway</span><span>Outbound &amp; dispatch</span><span>Inventory management</span><span>Solution design</span></div></article>
+        <article class="skill-card"><span class="skill-index">02 / ENGINEERING</span><h3>Application engineering</h3><p>Develop front-end experiences and back-end services that support day-to-day warehouse execution.</p><div class="pills"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>C#</span><span>PostgreSQL</span><span>MS SQL Server</span></div></article>
+        <article class="skill-card"><span class="skill-index">03 / DELIVERY</span><h3>Enterprise integration</h3><p>Connect WMS processes with business platforms, validate data exchange, and support implementation testing.</p><div class="pills"><span>SAP / ERP</span><span>REST APIs</span><span>FTP / SFTP</span><span>Postman</span><span>Testing</span><span>Windows Server</span><span>PM2</span></div></article>
+      </div>
+    </section>
+
+    <section class="site-section" id="client-sites" aria-labelledby="sites-title">
+      <div class="wrap"><div class="section-head"><div><div class="eyebrow">CLIENT SITE EXPOSURE / 04</div><h2 id="sites-title">Work across real operations</h2></div><p>On-site client exposure across India and the UK, including a three-month visit to Oxford.</p></div>
+        <div class="site-grid">
+          <article class="site-card featured"><span class="site-country">UNITED KINGDOM</span><h3>Oxford</h3><p>Three-month client site visit</p><span class="site-mark">UK</span></article>
+          <article class="site-card"><span class="site-country">INDIA · DELHI NCR</span><h3>KRBL</h3><p>Sonipat site</p></article>
+          <article class="site-card"><span class="site-country">INDIA</span><h3>Samsonite</h3><p>Bengaluru &amp; Nashik</p></article>
+          <article class="site-card"><span class="site-country">INDIA · HARYANA</span><h3>TCI</h3><p>Gurugram site</p></article>
+          <article class="site-card"><span class="site-country">INDIA · TAMIL NADU</span><h3>CUMI</h3><p>Hosur site</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap education-section" id="education" aria-labelledby="education-title">
+      <div class="section-head"><div><div class="eyebrow">EDUCATION / 05</div><h2 id="education-title">Engineering foundation</h2></div><p>Electronics and Communication Engineering.</p></div>
+      <article class="education-entry"><span class="education-years">2019 — 2023</span><div><h3>SRM University</h3><p>Bachelor of Technology · Electronics &amp; Communication Engineering</p></div></article>
+    </section>
+
+    <section class="wrap contact-row" id="contact">
+      <div><div class="eyebrow">CONTACT / 06</div><h2>Let’s make warehouse tech work harder.</h2><p>Open to conversations about WMS consulting, implementation, engineering, and integration roles.</p><div class="contact-actions"><a class="button" href="https://wa.me/918124727058?text=Hi%20Narendiran%2C%20I%20viewed%20your%20resume." target="_blank" rel="noopener noreferrer">Message on WhatsApp <span class="arrow">↗</span></a><a class="button secondary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gvnarendiran%40gmail.com" target="_blank" rel="noopener noreferrer">Compose in Gmail <span class="arrow">↗</span></a></div><div class="contact-links"><a href="tel:+918124727058">+91 81247 27058</a><a href="mailto:gvnarendiran@gmail.com">gvnarendiran@gmail.com</a><a href="https://www.linkedin.com/in/gv-narendiran-0a914b190/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></div></div>
+    </section>
+  </main>
+  <footer class="wrap"><span>© 2026 Narendiran G V · Professional resume</span><span>BUILT AROUND THE WORK</span></footer>
+
+</body>
+</html>
