@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070d16">
+  <meta name="theme-color" content="#f6f5ef">
   <meta name="description" content="Narendiran G V is a techno-functional WMS consultant working across warehouse workflows, software engineering, and SAP/ERP integrations.">
-  <title>Narendiran G V — WMS Consultant Resume</title>
+  <title>Narendiran G V — WMS Consultant | White Edition</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -486,6 +486,22 @@
     @media(max-width:360px) {
       .diagram { min-height:300px; }
     }
+  
+    /* Elegant abstract systems-flow artwork for the white edition. */
+    .system-visual { position:absolute; inset:42px 12px 43px; display:grid; place-items:center; }
+    .system-visual svg { width:100%; height:100%; overflow:visible; }
+    .system-visual .orbit { fill:none; stroke:#8ba38a; stroke-width:1; opacity:.28; }
+    .system-visual .orbit-inner { stroke-dasharray:2 7; opacity:.48; }
+    .system-visual .flow-line { fill:none; stroke:#789878; stroke-width:1.5; opacity:.48; }
+    .system-visual .axis-line { fill:none; stroke:#a6b7a1; stroke-width:1; stroke-dasharray:3 6; opacity:.6; }
+    .system-visual .core circle { fill:#315c49; stroke:#fffefa; stroke-width:5; }
+    .system-visual .core path { fill:none; stroke:#dce8d6; stroke-width:2; stroke-linecap:round; }
+    .system-visual .orbit-point circle { fill:#9aaf83; }
+    .system-visual .system-node rect { fill:#fffefa; stroke:#cad8c7; stroke-width:1; }
+    .system-visual .system-node circle { fill:#789878; }
+    .system-visual .system-node text { fill:#3e5848; font:14px 'DM Mono',monospace; letter-spacing:1px; }
+    @media(max-width:600px) { .system-visual { inset:38px 2px 40px; } }
+
   </style>
 </head>
 <body>
@@ -510,15 +526,23 @@
           <a class="button secondary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gvnarendiran%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Narendiran in Gmail">Gmail <span class="arrow">↗</span></a>
         </div>
       </div>
-      <div class="diagram" role="img" aria-label="Illustration of a warehouse, storage racks, inventory boxes and a scan device">
-        <div class="diagram-label"><span>WAREHOUSE SYSTEM MAP</span><span>SYS / 001</span></div>
-        <div class="warehouse">
-          <div class="roof"></div><div class="building"></div><div class="beam"></div>
-          <div class="rack r1"></div><div class="rack r2"></div><div class="rack r3"></div>
-          <div class="box b1"></div><div class="box b2"></div><div class="box b3"></div><div class="box b4"></div>
-          <div class="scan"></div><div class="signal">SCAN<br>→</div><div class="flow"></div>
+      <div class="diagram" role="img" aria-label="Abstract systems flow connecting inbound, inventory, SAP and outbound">
+        <div class="diagram-label"><span>SYSTEMS IN MOTION</span><span>FLOW / 001</span></div>
+        <div class="system-visual" aria-hidden="true">
+          <svg viewBox="0 0 600 330" xmlns="http://www.w3.org/2000/svg">
+            <circle class="orbit orbit-outer" cx="300" cy="165" r="118" />
+            <circle class="orbit orbit-inner" cx="300" cy="165" r="77" />
+            <path class="flow-line" d="M151 92 C205 70 229 97 265 130 M449 92 C395 70 371 97 335 130 M151 238 C205 260 229 233 265 200 M449 238 C395 260 371 233 335 200" />
+            <path class="axis-line" d="M300 40v45 M300 245v45 M175 165h46 M379 165h46" />
+            <g class="core"><circle cx="300" cy="165" r="43"/><path d="M280 165h40M300 145v40M286 151l28 28M314 151l-28 28"/></g>
+            <g class="orbit-point"><circle cx="300" cy="47" r="5"/><circle cx="418" cy="165" r="5"/><circle cx="300" cy="283" r="5"/><circle cx="182" cy="165" r="5"/></g>
+            <g class="system-node node-in"><rect x="43" y="69" width="132" height="44" rx="22"/><circle cx="61" cy="91" r="4"/><text x="74" y="95">INBOUND</text></g>
+            <g class="system-node node-sap"><rect x="425" y="69" width="132" height="44" rx="22"/><circle cx="443" cy="91" r="4"/><text x="456" y="95">SAP / ERP</text></g>
+            <g class="system-node node-inv"><rect x="43" y="217" width="132" height="44" rx="22"/><circle cx="61" cy="239" r="4"/><text x="74" y="243">INVENTORY</text></g>
+            <g class="system-node node-out"><rect x="425" y="217" width="132" height="44" rx="22"/><circle cx="443" cy="239" r="4"/><text x="456" y="243">OUTBOUND</text></g>
+          </svg>
         </div>
-        <div class="diagram-foot"><span><b>INBOUND</b> → INVENTORY → OUTBOUND</span><span>LIVE FLOW <i class="live-dot"></i></span></div>
+        <div class="diagram-foot"><span><b>PROCESS</b> → DATA → DELIVERY</span><span>CONNECTED SYSTEMS <i class="live-dot"></i></span></div>
       </div>
     </section>
 
